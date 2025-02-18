@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EzyMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>EzyMart</h1>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#products" class="scroll-link">Products</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
+                <li><a href="#newsletter" class="open-modal">Subscribe</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 id="greeting">Welcome to EzyMart!</h2>
+            <p>Your one-stop shop for everything you need.</p>
+            <button onclick="showAlert()">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section id="products" class="product-categories">
+        <h2>Explore Our Categories</h2>
+        <div class="categories">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150" alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150" alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150" alt="Home Essentials">
+                <h3>Home Essentials</h3>
+            </div>
+            <!-- More Categories -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150" alt="Toys">
+                <h3>Toys</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150" alt="Books">
+                <h3>Books</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150" alt="Beauty Products">
+                <h3>Beauty Products</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Modal -->
+    <div id="newsletter-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to our newsletter and never miss an offer.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" id="email" required>
+                <button type="submit" onclick="subscribeNewsletter(event)">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact us at: <a href="mailto:info@ezymart.com">info@ezymart.com</a></p>
+        <p>&copy; 2025 EzyMart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
